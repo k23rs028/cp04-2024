@@ -63,7 +63,7 @@
 
     #btnD {
         font-size: 10px;
-        position:absolute; top:380px; left:100%; width:40%; height:60px; 
+        position:absolute; top:380px; left:100%; width:30%; height:60px; 
     }
     
     #minute {
@@ -77,7 +77,7 @@
     }
 
     body {
-        background: #00ffff;
+        background: #ff000000;
     }
 
     button {

@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -194,13 +198,19 @@
         
     }
 
-    // ButtonCがクリックされた時の処理
-    function btnCClick(e){
+
+     // ButtonCがクリックされた時の処理
+     function btnCClick(e){ 
         alarm();
         active = false;
         period = 60*parseInt($("#minute").val())+parseInt($("#second").val());
         $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： "+period);
+    }
+
+    // ButtonDがクリックされた時の処理
+    function btnDClick(e){
+        period+=10;
         
     }
     
@@ -220,7 +230,6 @@
         
     }
 }
-
   </script>
 </head>
 <body>
