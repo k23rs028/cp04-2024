@@ -216,6 +216,7 @@
     // ButtonDがクリックされた時の処理
     function btnDClick(e){
         period+=10;
+        $("#history").html("10秒追加");
         
     }
 
@@ -224,7 +225,7 @@
         if(period>=10){
             period-=10;
         }else{
-            period=0;
+            period = 0;
         }
         
     }
@@ -260,6 +261,7 @@
     <button id="btnC">Set</button>
     <button id="btnD">+</button>
     <button id="btnE">-</button>
+    <div id="history" class="out">HISTORY</div>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
